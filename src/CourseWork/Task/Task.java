@@ -88,7 +88,8 @@ public abstract class Task {
                 + getType () + ".\n Периодичность повторения задачи " + getRepeatabilityTask ()
                 + ".\n Дата первого выполнения " + getDateLead ();
     }
-
 }
+
+
 
 

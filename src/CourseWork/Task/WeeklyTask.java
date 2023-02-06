@@ -22,6 +22,6 @@ public class WeeklyTask extends Task {
         return getDateLead ().toLocalDate ().getDayOfWeek ().equals ( date.getDayOfWeek () );
 
     }
-
-
 }
+
+
