@@ -19,7 +19,7 @@ public class WeeklyTask extends Task {
 
     @Override
     public boolean appearsIn(LocalDate date) {
-        return getDateLead ().toLocalDate ().getDayOfWeek ().equals ( date.getDayOfWeek () );
+        return getDateLead ().toLocalDate ().getDayOfWeek ().equals ( date.getDayOfWeek ());
 
     }
 }

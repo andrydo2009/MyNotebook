@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class TaskService {
     private final Map<Integer, Task> taskMap;
@@ -44,13 +46,15 @@ public class TaskService {
                 list.add ( taskMap.get ( i ) );
             }
         }
+//        ArrayList<Task> list = IntStream.range ( 1 , taskMap.size () + 1 ).filter ( i -> taskMap.get ( i ).appearsIn ( date ) ).mapToObj ( taskMap::get )
+//        .collect ( Collectors.toCollection ( ArrayList::new ) );
         if (list.isEmpty ()){
             System.out.println ("На сегодня у вас нет задач");
         }
         return list;
     }
 
-    ;
+
 
 
 }
