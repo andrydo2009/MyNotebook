@@ -9,16 +9,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class TaskService {
     private final Map<Integer, Task> taskMap;
 
-
     public TaskService() {
         taskMap = new HashMap<> ();
-        //  Collection<Task> removedTasks = new ArrayList<> ();
     }
 
     public void add(Task task) throws IncorrectArgumentException {                                                      // метод добавление задачи
@@ -26,7 +22,6 @@ public class TaskService {
             throw new IncorrectArgumentException ( "Некорректно введены данные задачи" );
         }
         taskMap.put ( task.getId () , task );
-
     }
 
     public Task remove(int id) throws TaskNotFoundException {                                                           // метод удаления задачи
@@ -35,7 +30,6 @@ public class TaskService {
         if (task == null) {
             throw new TaskNotFoundException ( "В списке нет задачи с таким id" );
         }
-
         return task;
     }
 
@@ -46,15 +40,9 @@ public class TaskService {
                 list.add ( taskMap.get ( i ) );
             }
         }
-//        ArrayList<Task> list = IntStream.range ( 1 , taskMap.size () + 1 ).filter ( i -> taskMap.get ( i ).appearsIn ( date ) ).mapToObj ( taskMap::get )
-//        .collect ( Collectors.toCollection ( ArrayList::new ) );
         if (list.isEmpty ()){
             System.out.println ("На сегодня у вас нет задач");
         }
         return list;
     }
-
-
-
-
 }

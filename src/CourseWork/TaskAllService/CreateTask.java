@@ -63,7 +63,6 @@ public class CreateTask {
         return leadTime;
     }
 
-
     public static Task createTask(Scanner scanner) throws IncorrectArgumentException {
         while (true) {
             System.out.println ( "Выберите периодичность повторения задачи указав нужный пункт меню : " +
@@ -88,6 +87,4 @@ public class CreateTask {
             System.out.println ( "Введите правильный пункт меню " );
         }
     }
-
-
 }

@@ -1,7 +1,5 @@
 package CourseWork.Task;
 
-// ежегодная задача
-
 import CourseWork.EnumTask.RepeatabilityTask;
 import CourseWork.EnumTask.Type;
 

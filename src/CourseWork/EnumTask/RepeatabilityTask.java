@@ -14,14 +14,12 @@ public enum RepeatabilityTask {
     }
 
     public String getRepeatabilityTask() {
-        return repeatabilityTask
-                ;
+        return repeatabilityTask;
     }
 
     @Override
     public String toString() {
         return getRepeatabilityTask ();
     }
-
 }
 
