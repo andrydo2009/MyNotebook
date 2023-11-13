@@ -85,7 +85,7 @@ public class CreateTask {
                 case 5:
                     return new YearlyTask ( inputTaskType ( scanner ) , inputTaskTitle () , inputTaskDescriptions () , createLeadTime ( scanner ) , RepeatabilityTask.TASK_YEARLY );
             }
-            System.out.println ( "Ввведите правильный пункт меню " );
+            System.out.println ( "Введите правильный пункт меню " );
         }
     }
 
